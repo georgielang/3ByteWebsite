@@ -1,38 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
 
-function HelloButton() {
-    function handleClick() {
-        alert("Hello");
-    }
+import Home from './pages/Home';
+import About from './pages/About';
 
-    return (
-        <button onClick={handleClick}>
-            I am a button
-        </button>
-    );
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-}
 
 function App() {
-
-    let page = "main"
-
-    function pageButton() {
-        if (page === "main") {
-            page = "second";
-        } else {
-            page = "main";
-        }
-    }
-
     return (
-        <div className="App">
-            <header className="App-header">
-                This is the {page} page
-                <button onClick={pageButton}>first page button</button>
-            </header>
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
     );
 }
 
