@@ -12,17 +12,19 @@ Wesite Setup:
 
 6. run command "npm install --save gh-pages"
 
-8. run command "npm install react-router-dom"
+7. run command "npm install react-router-dom"
 
-7. locate "packages.json
+8. run command "npm install react-icons"
 
-8. inside packages.json at the top of the file add: "homepage": "<link-to-website>"
+9. locate "packages.json
 
-9. under scripts add: 
+10. inside packages.json at the top of the file add: "homepage": "<link-to-website>"
+
+11. under scripts add: 
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 
-10. in GitHub app, add a local directory, add this one, and create create a GitHub repo for the files, push all as it already makes a gitignore for us
+12. in GitHub app, add a local directory, add this one, and create create a GitHub repo for the files, push all as it already makes a gitignore for us
 
 
 
