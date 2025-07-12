@@ -12,6 +12,8 @@ Wesite Setup:
 
 6. run command "npm install --save gh-pages"
 
+8. run command "npm install react-router-dom"
+
 7. locate "packages.json
 
 8. inside packages.json at the top of the file add: "homepage": "<link-to-website>"
