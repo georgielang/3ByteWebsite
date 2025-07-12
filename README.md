@@ -31,3 +31,16 @@ cmd as admin -> cd into dir of website -> npm start
 to deploy it to the git:
 
 cmd as admin -> cd into dir of website -> npm run deploy
+
+
+workflow will be:
+
+1. create branch off of master
+
+2. make changes commit changes throughout build to your branch
+
+3. BEFORE running npm run deploy - attempt to merge to master branch
+
+4. merge code to master branch
+
+5. run "npm run deploy"
